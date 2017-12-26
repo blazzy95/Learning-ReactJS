@@ -1,10 +1,11 @@
 {
   "ExpandedNodes": [
     "",
+    "\\config",
     "\\public",
     "\\src",
     "\\src\\Person"
   ],
-  "SelectedNode": "\\src\\App.css",
+  "SelectedNode": "\\config\\webpack.config.prod.js",
   "PreviewInSolutionExplorer": false
 }
