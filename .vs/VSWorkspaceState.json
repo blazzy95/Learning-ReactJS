@@ -4,8 +4,9 @@
     "\\config",
     "\\public",
     "\\src",
+    "\\src\\ErrorBoundary",
     "\\src\\Person"
   ],
-  "SelectedNode": "\\config\\webpack.config.prod.js",
+  "SelectedNode": "\\src\\ErrorBoundary\\ErrorBoundary.js",
   "PreviewInSolutionExplorer": false
 }
