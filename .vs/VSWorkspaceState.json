@@ -4,9 +4,12 @@
     "\\config",
     "\\public",
     "\\src",
-    "\\src\\ErrorBoundary",
-    "\\src\\Person"
+    "\\src\\components",
+    "\\src\\components\\Cockpit",
+    "\\src\\components\\Persons",
+    "\\src\\components\\Persons\\Person",
+    "\\src\\containers"
   ],
-  "SelectedNode": "\\src\\ErrorBoundary\\ErrorBoundary.js",
+  "SelectedNode": "\\src\\containers\\App.css",
   "PreviewInSolutionExplorer": false
 }
