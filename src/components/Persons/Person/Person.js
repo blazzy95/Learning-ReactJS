@@ -1,16 +1,47 @@
-import React from 'react';
+import React, { Component} from 'react';
 import classes from './Person.css';
+import withClass from '../../../hoc/withClass.js';
+import Auxi from '../../../hoc/Auxi.js';
+import PropTypes from 'prop-types';
 
-const person = (props) => {
+class Person extends Component {
 
-    return (
-        <div className= {classes.Person} >
-            <p onClick={props.click}>I'm {props.name} and i am {props.age} years old!</p>
-            <p>{props.children}</p>
-            <input type="text" onChange={props.Changed} value={props.name}/>
-        </div>
+    constructor(props) {
+        super(props);
+        console.log('[Person.js] Inside Constructor', props);
+    }
+
+    componentWillMount() {
+        console.log('[Person.js] Inside componentWillMount()');
+    }
+
+    componentDidMount() {
+        console.log('[Person.js] Inside componentDidMount()');
+        this.inputElement.focus();
+    }
+
+
+    render() {
+        console.log('[Person.js] inside render()');
+        return (
+            <Auxi>
+                <p onClick={this.props.click}>I'm {this.props.name} and i am {this.props.age} years old!</p>
+                <p>{this.props.children}</p>
+                <input
+                    ref={(inp) => { this.inputElement = inp }}
+                    type="text"
+                    onChange={this.props.Changed}
+                    value={this.props.name} />
+            </Auxi>
         );
+    }
+}
+
+Person.propTypes = {
+    click: PropTypes.func,
+    name: PropTypes.string,
+    age: PropTypes.number,
+    changed: PropTypes.func
 };
 
-
-export default person;
+export default withClass(Person, classes.Person);

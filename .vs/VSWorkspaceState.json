@@ -8,8 +8,9 @@
     "\\src\\components\\Cockpit",
     "\\src\\components\\Persons",
     "\\src\\components\\Persons\\Person",
-    "\\src\\containers"
+    "\\src\\containers",
+    "\\src\\hoc"
   ],
-  "SelectedNode": "\\src\\containers\\App.css",
+  "SelectedNode": "\\src\\containers\\App.js",
   "PreviewInSolutionExplorer": false
 }
