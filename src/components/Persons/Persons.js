@@ -32,7 +32,7 @@ class Persons extends PureComponent {
     componentDidUpdate() {
         console.log('[UPDATE Persons.js] Inside componentDidUpdate()');
         if (this.inputElement.focus === 0) {
-            thhis.inputElement.focus();
+            this.inputElement.focus();
         }
     }
 
